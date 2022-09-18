@@ -1136,7 +1136,9 @@ r300 driver environment variables
    ``nocmask``
       Disable AA compression and fast AA clear
    ``use_tgsi``
-      Request TGSI shaders from the state tracker
+      Request TGSI shaders from the state tracker. This only works for state
+      trackers that support emitting TGSI, so is currently only useful for nine. 
+      This flag has no effect for OpenGL or OpenGL ES.  
    ``notcl``
       Disable hardware accelerated Transform/Clip/Lighting
 
